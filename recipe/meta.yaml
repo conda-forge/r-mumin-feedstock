@@ -1,4 +1,4 @@
-{% set version = '1.42.1' %}
+{% set version = "1.43.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MuMIn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MuMIn/MuMIn_{{ version }}.tar.gz
-  sha256: fa7e240bf5311050cbe2df86d9a0c6fa91c7371d2d9307ac988e8d961eba17bc
+  sha256: c811ffe278dee9cd79d7a0fe79795b67fff918bcc5ab2f815d691efb69500b3d
 
 build:
   merge_build_host: True  # [win]
