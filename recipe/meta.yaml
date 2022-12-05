@@ -28,7 +28,7 @@ requirements:
     - r-matrix
     - r-nlme
   run:
-    - r-base. >=4.2.0
+    - r-base  >=4.2.0
     - r-matrix
     - r-nlme
 
