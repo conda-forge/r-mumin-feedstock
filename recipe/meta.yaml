@@ -24,11 +24,11 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base >= 4.2.0
     - r-matrix
     - r-nlme
   run:
-    - r-base
+    - r-base >= 4.2.0
     - r-matrix
     - r-nlme
 
