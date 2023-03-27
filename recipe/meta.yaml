@@ -1,4 +1,4 @@
-{% set version = "1.47.1" %}
+{% set version = "1.47.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MuMIn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MuMIn/MuMIn_{{ version }}.tar.gz
-  sha256: 1223b5ada6f7d58220ac0267fa3473993190742646cbbb3dfe63895e61621af6
+  sha256: 6ff3554d8a503f29b1bd9e94dc2d4e1a9bcde5cd9faa5f8473b0559aced20a77
 
 build:
   merge_build_host: true  # [win]
@@ -25,10 +25,12 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base >=4.2.0
+    - r-insight
     - r-matrix
     - r-nlme
   run:
     - r-base >=4.2.0
+    - r-insight
     - r-matrix
     - r-nlme
 
@@ -48,27 +50,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - jacodela
-
-# Package: MuMIn
-# Type: Package
-# Title: Multi-Model Inference
-# Version: 1.42.1
-# Date: 2018-07-21
-# Encoding: UTF-8
-# Author: Kamil Barton
-# Maintainer: Kamil Barton <kamil.barton@go2.pl>
-# Description: Tools for performing model selection and model averaging. Automated model selection through subsetting the maximum model, with optional constraints for model inclusion. Model parameter and prediction averaging based on model weights derived from information criteria (AICc and alike) or custom model weighting schemes.
-# License: GPL-2
-# Depends: R (>= 3.0.0)
-# Imports: graphics, methods, Matrix, stats, stats4, nlme
-# Suggests: lme4 (>= 1.1.0), mgcv (>= 1.7.5), gamm4, MASS, nnet, survival (>= 2.37.5), geepack
-# Enhances: aod, aods3, betareg, caper, coxme, cplm, gee, glmmML, logistf, MCMCglmm, ordinal, pscl, spdep, splm, unmarked (>= 0.12.2), geeM (>= 0.7.5)
-# LazyData: yes
-# ByteCompile: yes
-# Repository: CRAN
-# Repository/R-Forge/Project: mumin
-# Repository/R-Forge/Revision: 440
-# Repository/R-Forge/DateTimeStamp: 2018-07-22 18:13:45
-# Date/Publication: 2018-07-23 07:40:03 UTC
-# NeedsCompilation: no
-# Packaged: 2018-07-22 18:30:10 UTC; rforge

@@ -1,11 +1,11 @@
-About r-mumin
-=============
+About r-mumin-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mumin-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=MuMIn
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mumin-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for performing model selection and model averaging. Automated model selection through subsetting the maximum model, with optional constraints for model inclusion. Model parameter and prediction averaging based on model weights derived from information criteria (AICc and alike) or custom model weighting schemes.
 
