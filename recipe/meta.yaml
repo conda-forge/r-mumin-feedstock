@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -24,12 +24,12 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base >=4.2.0
+    - r-base
     - r-insight
     - r-matrix
     - r-nlme
   run:
-    - r-base >=4.2.0
+    - r-base
     - r-insight
     - r-matrix
     - r-nlme
