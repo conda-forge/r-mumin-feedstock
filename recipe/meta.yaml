@@ -1,4 +1,4 @@
-{% set version = "1.48.4" %}
+{% set version = "1.48.11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MuMIn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MuMIn/MuMIn_{{ version }}.tar.gz
-  sha256: 2002e1c6e22fc5ad63e797b9d4aa7ae0f502f142d0516a096128886df530f613
+  sha256: c1f3520694f37f7c96625c8baeb27c3af6a10baa2cad9905c94c3b6febb3fae7
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
