@@ -14,6 +14,7 @@ source:
 build:
   number: 0
   noarch: generic
+  skip: true  # [r_base == "4.3"]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,7 +43,8 @@ about:
   license: GPL-2.0-only
   summary: Tools for performing model selection and model averaging. Automated model selection through subsetting the maximum model, with optional constraints for model inclusion. Model parameter and prediction averaging based on model weights derived from information criteria (AICc and alike) or custom model weighting schemes.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
