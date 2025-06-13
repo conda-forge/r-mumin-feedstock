@@ -14,7 +14,6 @@ source:
 build:
   number: 0
   noarch: generic
-  skip: true  # [r_base == "4.3"]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -23,12 +22,12 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base >=4.4
     - r-insight
     - r-matrix
     - r-nlme
   run:
-    - r-base
+    - r-base >=4.4
     - r-insight
     - r-matrix
     - r-nlme
