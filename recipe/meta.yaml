@@ -1,4 +1,4 @@
-{% set version = "1.48.11" %}
+{% set version = "1.48.19" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MuMIn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MuMIn/MuMIn_{{ version }}.tar.gz
-  sha256: c1f3520694f37f7c96625c8baeb27c3af6a10baa2cad9905c94c3b6febb3fae7
+  sha256: 101f332c6546bc22ab9b958345e54ca44fded2342db91c33ccbeb69c3fc9ed4a
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,7 +40,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=MuMIn
   license: GPL-2.0-only
-  summary: Tools for performing model selection and model averaging. Automated model selection through subsetting the maximum model, with optional constraints for model inclusion. Model parameter and prediction averaging based on model weights derived from information criteria (AICc and alike) or custom model weighting schemes.
+  summary: Tools for performing model selection and model averaging. Automated model selection through subsetting the maximum model, with optional constraints for model inclusion. Model parameter and prediction averaging based on model weights derived from information criteria (AICc and alike) or custom model weighting
+    schemes.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
